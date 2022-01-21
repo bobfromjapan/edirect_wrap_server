@@ -1,0 +1,3 @@
+{
+        "query": "efetch -db nuccore -id NM_000518.5"
+}
