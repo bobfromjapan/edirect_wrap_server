@@ -1,7 +1,13 @@
 # edirect_wrap_server
 Build a simple wrap server in Python to throw queries as API from other PCs to the PC where Entrez Direct is installed.
 
-## prerequirements
+## Attention
+
+This tool is very primitive.
+It directly executes Edirect commands received in Json with `edirect.execute`. Normally, you may need to apply sanitization and other security measures.
+Please use this only in a LAN environment where the executor can be limited.
+
+## Prerequirements
 
 - Install Edirect and Python3 on the server(linux)
    - To install Edirect, simply follow the instructions on the [official docs](https://www.ncbi.nlm.nih.gov/books/NBK179288/) and execute a following command
