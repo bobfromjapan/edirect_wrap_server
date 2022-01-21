@@ -27,7 +27,7 @@ print(edirect.execute("efetch -db nuccore -id NM_000518.5 -format fasta"))
 2. Run the server by following command; `python app.py`
 3. POST json request to the server
     - I used the CURL command to verify it worked
-    - `curl -X POST -d @search.json http://localhost:3000`
+    - `curl -X POST -d @sample.json http://localhost:3000`
 
 
 Request json format is like this:
