@@ -3,7 +3,23 @@ Build a simple wrap server in Python to throw queries as API from other PCs to t
 
 ## prerequirements
 
-- install Edirect and Python3 on the server
+- Install Edirect and Python3 on the server(linux)
+   - To install Edirect, simply follow the instructions on the [official docs](https://www.ncbi.nlm.nih.gov/books/NBK179288/) and execute a following command
+   - `sh -c "$(curl -fsSL ftp://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh)"`
+
+To check if Edirect is available from Python, try a script like the following(refered from official docs).
+If you get an error, make sure you have a PATH to the Edirect installation location.
+
+```
+import sys
+import os
+import shutil
+
+sys.path.insert(1, os.path.dirname(shutil.which('xtract')))
+import edirect
+
+print(edirect.execute("efetch -db nuccore -id NM_000518.5 -format fasta"))
+```
 
 ## How to use
 
