@@ -1,5 +1,5 @@
 # edirect_wrap_server
-Build a simple wrap server to throw queries as API to the Entrez Direct installed PC from other PC.
+Build a simple wrap server to throw queries as API to the Entrez Direct installed PC.
 
 ## Attention
 
